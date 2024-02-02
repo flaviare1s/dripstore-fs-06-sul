@@ -1,16 +1,22 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Button } from "../Button/Button";
 
-// hooks: use
-// useState
-// useEffect
+function randomHexColor() {
+  // Generate random RGB values
+  var red = Math.floor(Math.random() * 256);
+  var green = Math.floor(Math.random() * 256);
+  var blue = Math.floor(Math.random() * 256);
+
+  // Convert RGB to hex
+  var hexColor =
+    "#" + red.toString(16).padStart(2, "0") + green.toString(16).padStart(2, "0") + blue.toString(16).padStart(2, "0");
+
+  return hexColor;
+}
 
 function Header() {
   const [estaLogado, setEstaLogado] = useState(false);
-
-  useEffect(() => {
-    setEstaLogado(true);
-  }, []);
+  const [contador, setContador] = useState(0);
 
   return (
     <>
@@ -23,8 +29,10 @@ function Header() {
         >
           {estaLogado ? "Logout" : "Login"}
         </Button>
-        <Button onClick={() => console.log("Somar mais um ao contador")}>Contador</Button>
-        <div>0</div>
+        <Button style={{ background: randomHexColor() }} onClick={() => setContador(contador + 1)}>
+          Contador
+        </Button>
+        <div>{contador}</div>
       </div>
       <div></div>
     </>
