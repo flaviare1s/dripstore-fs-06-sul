@@ -27,6 +27,10 @@ export const ProductsList = () => {
   }, [debouncedSearchText]);
 
   const productsToDisplay = products;
+  const totalValue = productsToDisplay.reduce((acc, item) => {
+    return acc + +item.price;
+  }, 0);
+  const totalGorgeous = productsToDisplay.filter((item) => item.type === "Gorgeous").length;
 
   return (
     <div className="flex">
@@ -42,6 +46,10 @@ export const ProductsList = () => {
         />
 
         <div>
+          <div>Numero de items: ({productsToDisplay.length})</div>
+          <div>Valor total de items expostos: ({totalValue})</div>
+          <div>total do tipo gorgeous: ({totalGorgeous})</div>
+
           <button
             className={`mb-4${searchType === "Gorgeous" && " font-bold"}`}
             onClick={() => {
