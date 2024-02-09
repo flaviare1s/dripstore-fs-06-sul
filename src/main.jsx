@@ -5,6 +5,7 @@ import Product from "./pages/Product.jsx";
 import "./index.css";
 
 import { createHashRouter, RouterProvider } from "react-router-dom";
+import { ProductsProvider } from "./providers/products";
 
 const router = createHashRouter([
   {
@@ -19,6 +20,8 @@ const router = createHashRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ProductsProvider>
+      <RouterProvider router={router} />
+    </ProductsProvider>
   </React.StrictMode>
 );

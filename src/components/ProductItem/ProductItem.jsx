@@ -1,4 +1,10 @@
+import { useProducts } from "../../providers/products";
+
 export const ProductItem = ({ product, ...rest }) => {
+  const products = useProducts();
+
+  console.log(products);
+
   return (
     <a href={`/#/product/${product.id}`}>
       <div className="border-[1px] border-black rounded-md p-2" {...rest}>

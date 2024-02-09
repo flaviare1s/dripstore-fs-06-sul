@@ -1,30 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ProductItem } from "../ProductItem/ProductItem";
-import { useDebounce } from "../../hooks/useDebounce";
+import { useFetchProducts } from "../../hooks/useFetchProducts";
 
 export const ProductsList = () => {
-  const [products, setProducts] = useState([]);
   const [searchText, setSearchText] = useState("");
   const [searchType, setSearchType] = useState("");
 
-  const debouncedSearchText = useDebounce(searchText, 300);
-
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const url = new URL("https://6597ee73668d248edf23ba81.mockapi.io/Product");
-      url.searchParams.append("search", debouncedSearchText);
-      const res = await fetch(url);
-      const products = await res.json();
-      console.log(products);
-      if (products === "Not found") {
-        setProducts([]);
-      } else {
-        setProducts(products);
-      }
-    };
-
-    fetchProducts();
-  }, [debouncedSearchText]);
+  const products = useFetchProducts(searchText);
 
   const productsToDisplay = products;
   const totalValue = productsToDisplay.reduce((acc, item) => {
