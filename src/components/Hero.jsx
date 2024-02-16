@@ -28,8 +28,8 @@ export const Hero = () => {
       <SwiperSlide>
         <HeroSlide
           eyebrown={'Melhores ofertas personalizadas'}
-          titulo={'Queima de estoque K-Swiss 🔥'}
-          descricao={'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.'}
+          titulo={'Super oferta K-Swiss 🔥'}
+          descricao={'Doloremque, illum earum? Pariatur unde doloremque laborum, cumque neque quam veniam, ullam nulla velit ut exercitationem!'}
           ctaText={'Ver Ofertas'}
           ctaLink={'#'}
           imagem={"k-swiss.png"}
@@ -39,10 +39,20 @@ export const Hero = () => {
         <HeroSlide
           eyebrown={'Melhores ofertas personalizadas'}
           titulo={'Air Jordan Edição de Colecionador 🔥'}
-          descricao={'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.'}
+          descricao={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum saepe quia quos consectetur!'}
           ctaText={'Ver Ofertas'}
           ctaLink={'#'}
           imagem={"air-jordan.png"}
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <HeroSlide
+          eyebrown={'Melhores ofertas personalizadas'}
+          titulo={'Promoção Imperdível!!!'}
+          descricao={'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.'}
+          ctaText={'Ver Ofertas'}
+          ctaLink={'#'}
+          imagem={"white-sneakers.png"}
         />
       </SwiperSlide>
       ...
