@@ -15,10 +15,36 @@ export const Hero = () => {
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide><HeroSlide/></SwiperSlide>
-      <SwiperSlide><HeroSlide/></SwiperSlide>
-      <SwiperSlide><HeroSlide/></SwiperSlide>
-      <SwiperSlide><HeroSlide/></SwiperSlide>
+      <SwiperSlide>
+        <HeroSlide
+          eyebrown={'Melhores ofertas personalizadas'}
+          titulo={'Queima de estoque Nike 🔥'}
+          descricao={'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.'}
+          ctaText={'Ver Ofertas'}
+          ctaLink={'#'}
+          imagem={"white-sneakers.png"}
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <HeroSlide
+          eyebrown={'Melhores ofertas personalizadas'}
+          titulo={'Queima de estoque K-Swiss 🔥'}
+          descricao={'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.'}
+          ctaText={'Ver Ofertas'}
+          ctaLink={'#'}
+          imagem={"k-swiss.png"}
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <HeroSlide
+          eyebrown={'Melhores ofertas personalizadas'}
+          titulo={'Air Jordan Edição de Colecionador 🔥'}
+          descricao={'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.'}
+          ctaText={'Ver Ofertas'}
+          ctaLink={'#'}
+          imagem={"air-jordan.png"}
+        />
+      </SwiperSlide>
       ...
     </Swiper>
   );
