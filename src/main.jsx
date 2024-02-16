@@ -6,6 +6,7 @@ import "./index.css";
 
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import { ProductsProvider } from "./providers/products";
+import { CartProvider } from "./providers/cart.jsx";
 
 const router = createHashRouter([
   {
@@ -20,8 +21,10 @@ const router = createHashRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ProductsProvider>
-      <RouterProvider router={router} />
-    </ProductsProvider>
+    <CartProvider>
+      <ProductsProvider>
+        <RouterProvider router={router} />
+      </ProductsProvider>
+    </CartProvider>
   </React.StrictMode>
 );

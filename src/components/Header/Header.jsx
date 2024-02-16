@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "../Button/Button";
+import { useCart } from "../../providers/cart";
 
 function randomHexColor() {
   // Generate random RGB values
@@ -15,13 +16,19 @@ function randomHexColor() {
 }
 
 function Header() {
+  const { lineItems } = useCart();
   const [estaLogado, setEstaLogado] = useState(false);
-  const [contador, setContador] = useState(0);
+
+  const [hexColor, setHexColor] = useState("");
+
+  useEffect(() => {
+    setHexColor(randomHexColor());
+  }, []);
 
   return (
     <>
       <div className="w-full flex justify-between items-center bg-gray-600 text-white py-4 px-8">
-        <h2>Header Title</h2>
+        <a href="/#/"><h2>Header Title</h2></a>
         <Button
           onClick={() => {
             setEstaLogado(!estaLogado);
@@ -29,10 +36,7 @@ function Header() {
         >
           {estaLogado ? "Logout" : "Login"}
         </Button>
-        <Button style={{ background: randomHexColor() }} onClick={() => setContador(contador + 1)}>
-          Contador
-        </Button>
-        <div>{contador}</div>
+        <Button style={{ background: hexColor }}>Carrinho ({lineItems.length})</Button>
       </div>
       <div></div>
     </>
