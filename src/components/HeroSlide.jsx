@@ -1,12 +1,14 @@
 export const HeroSlide = ({eyebrown, titulo, descricao, ctaText, ctaLink, imagem}) => {
   return (
-    <div className='font-Inter w-screem flex flex-col md:flex-row-reverse justify-center items-center md:justify-start pt-4 md:pt-0 px-[25px] md:pt-[78px] md:pl-[100px] md:pr-[37px] md:max-h-[681px]'>
-      <div className="md:w-[60%]">
+    <div className='font-Inter w-screem flex flex-col md:flex-row-reverse justify-center items-center px-5 md:pt-[78px] md:pl-[100px] md:pr-[37px]'>
+      <div className="md:w-[63%]">
         <img className="absolute right-0 pt-5 md:hidden" src="hero-pattern-mobile.png" alt="Hero Pattern Mobile" />
         <img className="hidden md:absolute md:right-[37px] md:top-[78px] md:block" src="hero-pattern-desktop.png" alt="Hero Pattern Mobile" />
-        <img className="rotate-4 w-full" src={imagem} alt="White Sneakers" />
+        <div className="flex flex-col justify-center items-center py-10">
+          <img className="rotate-4 w-[70%] items-center mr-5 md:mr-14 mt-3" src={imagem} alt="White Sneakers" />
+        </div>
       </div>
-      <div className='flex flex-col items-center md:items-start md:w-[40%]'>
+      <div className='flex flex-col items-center md:items-start md:w-[37%]'>
         <p className='font-bold text-sm md:text-base text-[#C92071] md:text-[#F6AA1C] text-center md:text-left leading-[22px]'>{eyebrown}</p>
         <h1 className='text-[40px] md:text-[64px] md:leading-[66px] font-extrabold text-center md:text-left text-[#1F1F1F] leading-[50px] pt-2.5 pb-5'>{titulo}</h1>
         <p className='text-[#474747] text-sm md:text-lg font-medium leading-[22px] text-center md:text-left'>{descricao}</p>

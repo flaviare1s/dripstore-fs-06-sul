@@ -7,7 +7,7 @@
     width: 12px;
     height: 12px;
     background-color: #CCCCCC; 
-    margin-bottom: 40px !important;
+    margin-bottom: 30px !important;
   }
   
   .swiper-pagination-bullet-active {
@@ -18,6 +18,7 @@
   @media screen and (min-width:770px) {
     .swiper-pagination-bullet {
       margin-bottom: 53px !important;
+      margin-top: 53px !important;
     }
   }
 

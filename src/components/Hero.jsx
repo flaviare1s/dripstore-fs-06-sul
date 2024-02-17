@@ -22,7 +22,7 @@ export const Hero = () => {
           descricao={'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.'}
           ctaText={'Ver Ofertas'}
           ctaLink={'#'}
-          imagem={"white-sneakers.png"}
+          imagem={"white-sneakers2.png"}
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -32,7 +32,7 @@ export const Hero = () => {
           descricao={'Doloremque, illum earum? Pariatur unde doloremque laborum, cumque neque quam veniam, ullam nulla velit ut exercitationem!'}
           ctaText={'Ver Ofertas'}
           ctaLink={'#'}
-          imagem={"k-swiss.png"}
+          imagem={"k-swiss2.png"}
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -42,7 +42,7 @@ export const Hero = () => {
           descricao={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum saepe quia quos consectetur!'}
           ctaText={'Ver Ofertas'}
           ctaLink={'#'}
-          imagem={"air-jordan.png"}
+          imagem={"air-jordan-hero.png"}
         />
       </SwiperSlide>
       <SwiperSlide>
@@ -52,7 +52,7 @@ export const Hero = () => {
           descricao={'Consequat culpa exercitation mollit nisi excepteur do do tempor laboris eiusmod irure consectetur.'}
           ctaText={'Ver Ofertas'}
           ctaLink={'#'}
-          imagem={"white-sneakers.png"}
+          imagem={"white-sneakers2.png"}
         />
       </SwiperSlide>
       ...
