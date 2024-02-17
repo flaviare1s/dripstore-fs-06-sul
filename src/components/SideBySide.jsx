@@ -1,13 +1,18 @@
 import React from 'react'
 
-export const SideBySide = () => {
+export const SideBySide = ({image, eyebrown, title, description, ctaLink, ctaText}) => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2'>
-        <div className='grid col-span-1'>
-            <img src="air-jordan.png" alt="Sneakers" />
+    <div className='flex flex-col justify-start gap-16 m-auto md:grid md:grid-cols-2 pt-10 pl-8 pr-[42px]'>
+        <div className='bg-pattern-side bg-cover bg-no-repeat md:grid col-span-1 flex flex-col justify-center items-center m-auto'>
+            <img className='pt-5' src={image} alt="Sneakers" />   
         </div>
-        <div className='grid col-span-1'>
-
+        <div className='flex flex-col justify-start md:grid col-span-1'>
+            <div>
+                <p className='text-[#F6AA1C] md:text-[#C92071] text-sm font-bold text-left'>{eyebrown}</p>
+                <h1 className='text-[#474747] font-bold text-[28px] md:text-5xl leading-9 md:leading-[50px]'>{title}</h1>
+                <p className='text-[#474747] text-sm md:text-base leading-[22px] md:leading-7'>{description}</p>
+                <a href={ctaLink}>{ctaText}</a>
+            </div>
         </div>
     </div>
   )

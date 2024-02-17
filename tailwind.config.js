@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         'Inter': ['Inter', 'sans-serif'],
       },
+      backgroundImage: {
+        'pattern-side': "url('pattern-side-by-side.png')",
+      },
     },
   },
   plugins: [],
