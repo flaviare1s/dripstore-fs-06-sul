@@ -1,7 +1,10 @@
+import { SideBySide } from "../components/SideBySide";
 import "./App.css";
 
-function App() {
-  return <>Hello Drip Store</>;
+export function App() {
+  return <>
+    <SideBySide/>
+  </>;
 }
 
-export default App;
+
