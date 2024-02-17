@@ -10,8 +10,8 @@ export const SideBySide = ({image, eyebrown, title, description, ctaLink, ctaTex
             <div>
                 <p className='text-[#F6AA1C] md:text-[#C92071] text-sm font-bold text-left'>{eyebrown}</p>
                 <h1 className='text-[#474747] font-bold text-[28px] md:text-5xl leading-9 md:leading-[50px]'>{title}</h1>
-                <p className='text-[#474747] text-sm md:text-base leading-[22px] md:leading-7'>{description}</p>
-                <a href={ctaLink}>{ctaText}</a>
+                <p className='text-[#474747] text-sm md:text-base leading-[22px] md:leading-7 py-5'>{description}</p>
+                <a className='bg-[#C92071] text-[#F5F5F5] text-base text-center p-3 font-bold leading-6 w-[200px] h-10 mb-10 rounded' href={ctaLink}>{ctaText}</a>
             </div>
         </div>
     </div>
