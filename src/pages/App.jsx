@@ -1,7 +1,11 @@
+import { Footer } from "../components/Footer";
 import "./App.css";
 
 function App() {
-  return <>Hello Drip Store</>;
-}
+  return <>
+  
+  < Footer />;
+  </>;
+  }
 
 export default App;
