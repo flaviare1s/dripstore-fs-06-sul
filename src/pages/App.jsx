@@ -1,11 +1,11 @@
 import { Footer } from "../components/Footer";
 import "./App.css";
 
-function App() {
+export function App() {
   return <>
   
   < Footer />;
   </>;
   }
 
-export default App;
+

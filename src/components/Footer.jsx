@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+export function Footer() {
  
  
     return (
@@ -9,7 +9,7 @@ function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {/* Coluna 1 */}
             <div className="mb-4 md:mb-0">
-              <h2 className="text-white text-lg font-semibold mb-2"><img src="" alt="" srcset="" />Digital Store</h2>
+              <img src="logo.png" alt="Logo da Digital College" />
               <ul>
                 <li className="mb-2">
                   <a href="#" className="text-gray-400 hover:text-white">Link 1</a>
@@ -49,6 +49,6 @@ function Footer() {
           </div>
         </div>
       </footer>
-    );
-  };
-export { Footer };
+    )
+  }
+
