@@ -12,9 +12,9 @@ export function Footer() {
               <img className="pb-5 md:pb-10 w-[170px] md:w-[253px]" src="logo.png" alt="Logo da Digital College" />
               <p className="lg:pr-48">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
               <div className="flex gap-6 pt-5 md:pt-10">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a className="hover:opacity-50" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a className="hover:opacity-50" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a className="hover:opacity-50" href="#"><i class="fa-brands fa-twitter"></i></a>
               </div>
             </div>
 
@@ -22,12 +22,12 @@ export function Footer() {
             <div className="col-span-1 pb-10">
               <h2 className="text-lg font-semibold leading-[22px] pb-2.5">Informação</h2>
               <ul className="flex flex-col leading-[31px] md:leading-[38px]">
-                <a href="#">Sobre Drip Store</a>
-                <a href="#">Segurança</a>
-                <a href="#">Wishlist</a>
-                <a href="#">Blog</a>
-                <a href="#">Trabalhe conosco</a>
-                <a href="#">Meus Pedidos</a>
+                <a className="hover:opacity-50" href="#">Sobre Drip Store</a>
+                <a className="hover:opacity-50" href="#">Segurança</a>
+                <a className="hover:opacity-50" href="#">Wishlist</a>
+                <a className="hover:opacity-50" href="#">Blog</a>
+                <a className="hover:opacity-50" href="#">Trabalhe conosco</a>
+                <a className="hover:opacity-50" href="#">Meus Pedidos</a>
               </ul>
             </div>
 
@@ -35,11 +35,11 @@ export function Footer() {
             <div className="col-span-1 pb-10">
             <h2 className="text-lg font-semibold leading-[22px] pb-2.5">Categorias</h2>
               <ul className="flex flex-col leading-[31px] md:leading-[38px]">
-                <a href="#">Camisetas</a>
-                <a href="#">Calças</a>
-                <a href="#">Bonés</a>
-                <a href="#">Headphones</a>
-                <a href="#">Tênis</a>
+                <a className="hover:opacity-50" href="#">Camisetas</a>
+                <a className="hover:opacity-50" href="#">Calças</a>
+                <a className="hover:opacity-50" href="#">Bonés</a>
+                <a className="hover:opacity-50" href="#">Headphones</a>
+                <a className="hover:opacity-50" href="#">Tênis</a>
               </ul>
             </div>
   
