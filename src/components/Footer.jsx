@@ -4,7 +4,7 @@ export function Footer() {
  
  
     return (
-        <footer className="bg-gray-900">
+        <footer className="bg-gray-900 font-Inter text-white">
         <div className="container mx-auto py-8 px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             {/* Coluna 1 */}
