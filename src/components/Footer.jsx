@@ -4,13 +4,13 @@ export function Footer() {
  
  
     return (
-        <footer className="bg-gray-900 font-Inter text-white">
-        <div className="m-auto pl-5 pr-[74px] pt-[50px] pb-[46px] grid grid-cols-2 grid-rows-3 md:grid-cols-4 md:grid-rows-2 gap-3">
+        <footer className="bg-[#1F1F1F] font-Inter text-white">
+        <div className="m-auto pl-5 md:pl-[100px] pr-[74px] md:pr-[94px] pt-[50px] pb-[46px] md:pb-[22px] grid grid-cols-2 md:grid-cols-5">
 
             {/* Coluna 1 */}
-            <div className="col-span-2 md:col-span-1 font-medium text-sm md:font-normal md:text-base leading-[22px] md:leading-[26px] tracking-[.25px]">
-              <img className="py-5" src="logo.png" alt="Logo da Digital College" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+            <div className="col-span-2 font-medium text-sm md:font-normal md:text-base leading-[22px] md:leading-[26px] tracking-[.25px] pb-10">
+              <img className="pb-5 md:pb-10 w-[170px] md:w-[253px]" src="logo.png" alt="Logo da Digital College" />
+              <p className="lg:pr-48">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
               <div className="flex gap-6 pt-5 md:pt-10">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -19,9 +19,9 @@ export function Footer() {
             </div>
 
             {/* Coluna 2 */}
-            <div className="col-span-1">
-              <h2 className="text-lg font-semibold leading-[22px] md:leading-[38px]">Informação</h2>
-              <ul className="flex flex-col">
+            <div className="col-span-1 pb-10">
+              <h2 className="text-lg font-semibold leading-[22px] pb-2.5">Informação</h2>
+              <ul className="flex flex-col leading-[31px] md:leading-[38px]">
                 <a href="#">Sobre Drip Store</a>
                 <a href="#">Segurança</a>
                 <a href="#">Wishlist</a>
@@ -32,9 +32,9 @@ export function Footer() {
             </div>
 
             {/* Coluna 3 */}
-            <div className="col-span-1">
-            <h2 className="text-lg font-semibold leading-[22px] md:leading-[38px]">Categorias</h2>
-              <ul className="flex flex-col">
+            <div className="col-span-1 pb-10">
+            <h2 className="text-lg font-semibold leading-[22px] pb-2.5">Categorias</h2>
+              <ul className="flex flex-col leading-[31px] md:leading-[38px]">
                 <a href="#">Camisetas</a>
                 <a href="#">Calças</a>
                 <a href="#">Bonés</a>
@@ -45,13 +45,13 @@ export function Footer() {
   
             {/* Coluna 4 */}
             <div className="col-span-2 md:col-span-1">
-              <h2 className="text-lg font-semibold leading-[22px] md:leading-[38px]">Contato</h2>
-              <p>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
-              <p>(85) 3051-3411</p>
+              <h2 className="text-lg font-semibold leading-[22px] pb-2.5">Contato</h2>
+              <p className="leading-[31px] md:leading-[26px] pb-5">Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
+              <p className="leading-[31px] md:leading-[26px] mb-[23px]">(85) 3051-3411</p>
             </div>
             
             {/* Linha 2 desktop */}
-            <div className="col-span-2 md:col-span-4 border-t-2 border-white border-opacity-30 pt-[23px]">
+            <div className="col-span-2 md:col-span-5 border-t-2 border-white border-opacity-30 pt-[23px] md:pb-0">
               <p className="text-center">© 2022 Digital College</p>
             </div>
         </div>
