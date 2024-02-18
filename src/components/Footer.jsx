@@ -5,7 +5,7 @@ export function Footer() {
  
     return (
         <footer className="bg-[#1F1F1F] font-Inter text-white">
-        <div className="m-auto pl-5 md:pl-[100px] pr-[64px] md:pr-[84px] pt-[50px] pb-[46px] md:pb-[22px] grid grid-cols-2 md:grid-cols-5">
+        <div className="m-auto pl-5 md:pl-[100px] pr-[48px] md:pr-[96px] pt-[50px] pb-[46px] md:pb-[22px] grid grid-cols-2 md:grid-cols-5">
 
             {/* Coluna 1 */}
             <div className="col-span-2 font-medium text-sm md:font-normal md:text-base leading-[22px] md:leading-[26px] tracking-[.25px] pb-10">
