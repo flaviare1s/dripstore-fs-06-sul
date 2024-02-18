@@ -1,8 +1,6 @@
-import React from 'react'
-
 export const SideBySide = ({image, eyebrown, title, description, ctaLink, ctaText}) => {
   return (
-    <div className='flex flex-col justify-center gap-16 m-auto md:grid md:grid-cols-2 pt-10 pl-8 pr-[42px] md:pt-[106px] md:pb-[106px] md:pl-[59px] items-center'>
+    <div className='font-Inter flex flex-col justify-center gap-16 m-auto md:grid md:grid-cols-2 pt-10 pl-8 pr-[42px] md:pt-[106px] md:pb-[106px] md:pl-[59px] items-center'>
         <div className='bg-pattern-side bg-cover bg-no-repeat md:grid col-span-1 flex flex-col justify-center items-center m-auto w-[90%]'>
             <img className='pt-10' src={image} alt="Sneakers" />   
         </div>
