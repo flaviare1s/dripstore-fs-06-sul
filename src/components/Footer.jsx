@@ -5,7 +5,7 @@ export function Footer() {
  
     return (
         <footer className="bg-[#1F1F1F] font-Inter text-white">
-        <div className="m-auto pl-5 md:pl-[100px] pr-[74px] md:pr-[94px] pt-[50px] pb-[46px] md:pb-[22px] grid grid-cols-2 md:grid-cols-5">
+        <div className="m-auto pl-5 md:pl-[100px] pr-[64px] md:pr-[84px] pt-[50px] pb-[46px] md:pb-[22px] grid grid-cols-2 md:grid-cols-5">
 
             {/* Coluna 1 */}
             <div className="col-span-2 font-medium text-sm md:font-normal md:text-base leading-[22px] md:leading-[26px] tracking-[.25px] pb-10">
@@ -19,7 +19,7 @@ export function Footer() {
             </div>
 
             {/* Coluna 2 */}
-            <div className="col-span-1 pb-10">
+            <div className="col-span-1 pb-10 mr-10 md:mr-0">
               <h2 className="text-lg font-semibold leading-[22px] pb-2.5">Informação</h2>
               <ul className="flex flex-col leading-[31px] md:leading-[38px]">
                 <a className="hover:opacity-50" href="#">Sobre Drip Store</a>
