@@ -11,10 +11,10 @@ export function Footer() {
             <div className="col-span-2 font-medium text-sm md:font-normal md:text-base leading-[22px] md:leading-[26px] tracking-[.25px] pb-10">
               <img className="pb-5 md:pb-10 w-[170px] md:w-[253px]" src="logo.png" alt="Logo da Digital College" />
               <p className="lg:pr-48">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-              <div className="flex gap-6 pt-5 md:pt-10">
-                <a className="hover:opacity-50" href="#"><i className="fa-brands fa-facebook-f"></i></a>
-                <a className="hover:opacity-50" href="#"><i className="fa-brands fa-instagram"></i></a>
-                <a className="hover:opacity-50" href="#"><i className="fa-brands fa-twitter"></i></a>
+              <div className="flex gap-6 pt-5 md:pt-10 ">
+                <a className="hover:opacity-50" href="#"><i className="fa-brands fa-facebook-f fa-fw text-white text-lga-fw"></i></a>
+                <a className="hover:opacity-50" href="#"><i className="fa-brands fa-instagram fa-fw text-white text-lg"></i></a>
+                <a className="hover:opacity-50" href="#"><i className="fa-brands fa-twitter fa-fw text-white text-lg"></i></a>
               </div>
             </div>
 
