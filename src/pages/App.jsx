@@ -1,7 +1,11 @@
+import { FeaturedProductList } from "../components/featuredProductList/FeatureProductList";
 import "./App.css";
 
-function App() {
-  return <>Hello Drip Store</>;
-}
-
-export default App;
+export function App() {
+  return <>
+  <FeaturedProductList
+    title={'Produtos em alta'}
+    link={'Ver todos →'}
+  />
+  </>;
+  }
