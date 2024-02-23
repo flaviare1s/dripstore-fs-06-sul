@@ -1,5 +1,6 @@
 import { BurgerIcon } from "../BurgerIcon/BurgerIcon";
 import { DigitalIconMobile } from "../DigitalIconMobile/DigitalIconMobile";
+import { DigitalIcon } from "../DigitalIcon/DigitalIcon";
 import { SearchIcon } from "../SearchIcon/SearchIcon";
 import { CartIcon } from "../CartIcon/CartIcon";
 import { useState } from "react";
@@ -11,8 +12,8 @@ function Header() {
   const burgerMenuState = useBurgerMenu();
   return (
     <>
-      <div className="w-full p-5 flex flex-col gap-5 bg-white">
-        <div className="flex flex-row items-center justify-between">
+      <div className="w-full p-5 md:px-15 lg:px-20 flex flex-col gap-5 bg-white">
+        <div className="flex flex-row items-center justify-between ">
           <div className="md:hidden">
             <button onClick={() => {
               burgerMenuState.setIsActiveBurgerMenu(!burgerMenuState.isActiveBurgerMenu);
@@ -23,16 +24,20 @@ function Header() {
               <BurgerIcon />
             </button>
           </div>
-          <div className="flex gap-1 items-center">
-            <div>
+          <div className="flex gap-1 md:gap-2 items-center text-nowrap">
+            <div className="flex md:hidden">
               <DigitalIconMobile />
             </div>
-            Digital Collage
+            <div className="hidden md:flex">
+              <DigitalIcon/>
+            </div>
+            <div className="font-Inter font-semibold text-Primary text-xl md:text-xl lg:text-3xl"> Digital Collage </div>
           </div>
-          <div className="gap-10 hidden md:flex ">
-            <div className="pr-5 flex items-center gap-10 bg-slate-200 rounded-lg">
+
+          <div className="md:gap-10 hidden md:flex w-4/6 px-3">
+            <div className="w-full px-5 flex items-center bg-slate-200 rounded-lg justify-between">
               <input
-                className="w-full px-5 py-4 bg-slate-200 rounded-lg"
+                className="w-full bg-slate-200 rounded-lg focus:outline-none"
                 type="text"
                 placeholder="Pesquisar produto..."
                 value={valueSearchBar}
@@ -43,10 +48,10 @@ function Header() {
               </div>
             </div>
             <div>
-              <button className="py-4">Cadastre-se</button>
+              <button className="py-4 text-nowrap font-Inter font-normal text-base underline text-dark-gray-2">Cadastre-se</button>
             </div>
             <div>
-              <button className="px-5 py-4 bg-purple-200 rounded-lg">
+              <button className="px-5 py-4 bg-Primary rounded-lg font-Inter font-bold text-sm text-white">
                 Entrar
               </button>
             </div>
@@ -72,7 +77,7 @@ function Header() {
         {isActiveSeachBar && (
           <div className="pr-5 flex items-center gap-10 bg-slate-200 rounded-lg md:hidden">
             <input
-              className="w-full px-5 py-4 bg-slate-200 rounded-lg"
+              className="w-full px-5 py-4 bg-slate-200 rounded-lg focus:outline-none"
               type="text"
               placeholder="Pesquisar produto..."
               value={valueSearchBar}
@@ -85,16 +90,16 @@ function Header() {
         )}
         <div className="hidden md:flex gap-8">
           <div>
-            <button>Home</button>
+            <button className="font-Inter text-dark-gray-2">Home</button>
           </div>
           <div>
-            <button>Produtos</button>
+            <button className="font-Inter text-dark-gray-2">Produtos</button>
           </div>
           <div>
-            <button>Categorias</button>
+            <button className="font-Inter text-dark-gray-2">Categorias</button>
           </div>
           <div>
-            <button>Meus pedidos</button>
+            <button className="font-Inter text-dark-gray-2">Meus pedidos</button>
           </div>
         </div>
       </div>
