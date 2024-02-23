@@ -1,6 +1,6 @@
 export const HeroSlide = ({eyebrown, titulo, descricao, ctaText, ctaLink, imagem}) => {
   return (
-    <div className='font-Inter w-screem flex flex-col md:flex-row-reverse justify-center items-center px-5 md:pt-[78px] md:pl-[100px] md:pr-[37px]'>
+    <div className='font-Inter w-screen flex flex-col md:flex-row-reverse justify-center items-center px-5 md:pt-[78px] md:pl-[100px] md:pr-[37px]'>
       <div className="md:w-[62%]">
         <img className="absolute right-0 pt-5 md:hidden" src="hero-pattern-mobile.png" alt="Hero Pattern Mobile" />
         <img className="hidden md:absolute md:right-[37px] md:top-[78px] md:block" src="hero-pattern-desktop.png" alt="Hero Pattern Mobile" />

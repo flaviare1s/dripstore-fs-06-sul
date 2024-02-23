@@ -12,8 +12,6 @@ export const Hero = () => {
       className="mySwiper"
       spaceBetween={50}
       slidesPerView={1}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
     >
       <SwiperSlide>
         <HeroSlide
@@ -55,7 +53,6 @@ export const Hero = () => {
           imagem={"white-sneakers2.png"}
         />
       </SwiperSlide>
-      ...
     </Swiper>
   );
 }
