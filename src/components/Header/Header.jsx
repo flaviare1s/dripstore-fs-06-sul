@@ -12,15 +12,19 @@ function Header() {
   const burgerMenuState = useBurgerMenu();
   return (
     <>
-      <div className="w-full p-5 md:px-15 lg:px-20 flex flex-col gap-5 bg-white">
+      <div className="fixed w-full p-5 md:px-15 lg:px-20 flex flex-col gap-5 bg-white">
         <div className="flex flex-row items-center justify-between ">
           <div className="md:hidden">
-            <button onClick={() => {
-              burgerMenuState.setIsActiveBurgerMenu(!burgerMenuState.isActiveBurgerMenu);
-              if(isActiveSeachBar === true){
-                setIsActiveSeachBar(false);
-              }
-            }}>
+            <button
+              onClick={() => {
+                burgerMenuState.setIsActiveBurgerMenu(
+                  !burgerMenuState.isActiveBurgerMenu
+                );
+                if (isActiveSeachBar === true) {
+                  setIsActiveSeachBar(false);
+                }
+              }}
+            >
               <BurgerIcon />
             </button>
           </div>
@@ -29,9 +33,11 @@ function Header() {
               <DigitalIconMobile />
             </div>
             <div className="hidden md:flex">
-              <DigitalIcon/>
+              <DigitalIcon />
             </div>
-            <div className="font-Inter font-semibold text-Primary text-xl md:text-xl lg:text-3xl"> Digital Collage </div>
+            <div className="font-Inter font-semibold text-Primary text-xl md:text-xl lg:text-3xl">
+              Digital Collage
+            </div>
           </div>
 
           <div className="md:gap-10 hidden md:flex w-4/6 px-3">
@@ -48,7 +54,9 @@ function Header() {
               </div>
             </div>
             <div>
-              <button className="py-4 text-nowrap font-Inter font-normal text-base underline text-dark-gray-2">Cadastre-se</button>
+              <button className="py-4 text-nowrap font-Inter font-normal text-base underline text-dark-gray-2">
+                Cadastre-se
+              </button>
             </div>
             <div>
               <button className="px-5 py-4 bg-Primary rounded-lg font-Inter font-bold text-sm text-white">
@@ -99,7 +107,9 @@ function Header() {
             <button className="font-Inter text-dark-gray-2">Categorias</button>
           </div>
           <div>
-            <button className="font-Inter text-dark-gray-2">Meus pedidos</button>
+            <button className="font-Inter text-dark-gray-2">
+              Meus pedidos
+            </button>
           </div>
         </div>
       </div>

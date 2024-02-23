@@ -4,22 +4,22 @@ export const BurgerMenu = () => {
   const burgerMenuState = useBurgerMenu();
   return (
     <>
-      {burgerMenuState.isActiveBurgerMenu && <div className="h-full flex flex-col bg-red-500 w-4/5 p-7 grow justify-between md:hidden ">
+      {burgerMenuState.isActiveBurgerMenu && <div className="h-full flex flex-col bg-white w-4/5 p-7 grow justify-between md:hidden transition-[width] ease-in-out delay-150">
         <div className="flex flex-col">
-          <div className="font-bold pb-5">Páginas</div>
-          <div className="pt-5 flex flex-col">
-            <div>Home</div>
-            <div>Produtos</div>
-            <div>Categorias</div>
-            <div>Meus Pedidos</div>
+          <div className="font-Inter text-dark-gray-2 font-bold">Páginas</div>
+          <div className="pt-5 flex flex-col gap-3">
+            <div className="font-Inter text-dark-gray-2 text-base">Home</div>
+            <div className="font-Inter text-dark-gray-2 text-base">Produtos</div>
+            <div className="font-Inter text-dark-gray-2 text-base">Categorias</div>
+            <div className="font-Inter text-dark-gray-2 text-base">Meus Pedidos</div>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-5">
           <div className="w-full border-t border-cyan-600 pb-4"></div>
-          <div className="rounded-lg bg-slate-300 py-2 px-4 flex justify-center">
+          <div className="px-5 py-4 flex justify-center bg-Primary rounded-lg font-Inter font-bold text-sm text-white">
             <button>Entrar</button>
           </div>
-          <div className="py-2 px-4 flex justify-center">
+          <div className="px-4 flex justify-center font-Inter text-dark-gray-2">
             <button className="underline">Cadastre-se</button>
           </div>
         </div>
