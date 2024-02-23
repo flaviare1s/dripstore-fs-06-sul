@@ -2,7 +2,7 @@ export const ProductCard = ({ product, ...rest }) => {
   return (
     <a href={`/#/product/${product.id}`}>
       <div className="font-Inter" {...rest}>
-        <div className="flex flex-col bg-white">
+        <div className="flex flex-col bg-white rounded lg:pb-10  pb-8 mb-[10px] lg:mb[18px] ">
           <div className="flex">
             <p className="bg-[#E7FF86] mt-5 ml-5 px-3 rounded-[30px] text-center text-xs font-bold py-2">30% OFF</p>
           </div>
