@@ -6,7 +6,7 @@ import { Header } from "../components/Header/Header";
 import { SideBySide } from "../components/SideBySide/SideBySide";
 import { BurgerMenu } from "../components/BurgerMenu/BurgerMenu";
 import { FeaturedProductList } from "../components/FeaturedProductList/FeatureProductList";
-import { SmallHighlightSection } from "../components/SearchIcon/SmallHighlightSection";
+import { SmallHighlightSection } from "../components/SmallHighlightSection/SmallHighlightSection";
 
 export function App() {
   return (
@@ -19,7 +19,9 @@ export function App() {
         <Hero />
       </div>
       <div>
-        <SmallHighlightSection />
+        <SmallHighlightSection 
+          title={'Coleções em destaque'}
+        />
       </div>
       <FeaturedProductList title={"Produtos em alta"} link={"Ver todos →"} />
       <SideBySide
