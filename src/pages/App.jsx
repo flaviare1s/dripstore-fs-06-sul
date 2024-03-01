@@ -7,6 +7,7 @@ import { SideBySide } from "../components/SideBySide";
 import { BurgerMenu } from "../components/BurgerMenu/BurgerMenu";
 import { FeaturedProductList } from "../components/featuredProductList/FeatureProductList";
 
+
 export function App() {
   return (
     <div className="h-full min-h-screen w-full flex flex-col">

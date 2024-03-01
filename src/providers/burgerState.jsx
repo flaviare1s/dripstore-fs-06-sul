@@ -10,6 +10,12 @@ export const BurgerMenuProvider = ({ children }) => {
 
   const setIsActive = (stateBoolean) => {
     setIsActiveBurgerMenu(stateBoolean);
+    const body = document.querySelector("body");
+    if(!isActiveBurgerMenu){
+      body.style.overflowY = "hidden";
+    } else {
+      body.style.overflowY = "scroll";
+    }
   };
 
   return (
