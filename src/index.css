@@ -3,3 +3,35 @@
 @tailwind utilities;
 
 
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #CCCCCC; 
+    margin-bottom: 30px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #C92071;
+    ; 
+  }
+
+  @media screen and (max-width:770px) {
+    .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper {
+      padding-bottom: 41px;
+      padding-top: 41px;
+    }
+  }
+
+  @media screen and (min-width:770px) {
+    .swiper-pagination-bullet {
+      margin-bottom: 53px !important;
+      margin-top: 53px !important;
+    }
+
+    .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden.mySwiper {
+      padding-bottom: 53px;
+    }
+  }
+
+  
+
