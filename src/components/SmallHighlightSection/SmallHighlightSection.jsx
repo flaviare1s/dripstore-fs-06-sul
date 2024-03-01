@@ -1,4 +1,8 @@
-import { SmallHighlightItem } from "./SmallHighlightItem"
+import { SmallHighlightItem } from "../SmallHighlightItem/SmallHighlightItem"
+import { TShirtIcon } from "../SmallHighlightIcons/TShirtIcon"
+import { PantsIcon } from "../SmallHighlightIcons/PantsIcon"
+import { HeadphoneIcon } from "../SmallHighlightIcons/HeadphoneIcon"
+import { TenisIcon } from "../SmallHighlightIcons/TenisIcon"
 
 export const SmallHighlightSection = ({ title }) => {
   return (
@@ -8,23 +12,23 @@ export const SmallHighlightSection = ({ title }) => {
       </div>
       <div  className="flex justify-start items-center gap-8 p-5 overflow-x-auto md:justify-center">
         <SmallHighlightItem
-          image={"t-shirt-icon-svg.svg"}
+          image={<TShirtIcon />}
           name={'Camisetas'}
         />
         <SmallHighlightItem
-          image={"pants-icon-svg.svg"}
+          image={<PantsIcon />}
           name={'Calças'}
         />
         <SmallHighlightItem
-          image={"pants-icon-svg.svg"}
+          image={<PantsIcon />}
           name={'Bonés'}
         />
         <SmallHighlightItem
-          image={"headphone-icon-svg.svg"}
+          image={<HeadphoneIcon />}
           name={'Headphones'}
         />
         <SmallHighlightItem
-          image={"tenis-icon-svg.svg"}
+          image={<TenisIcon />}
           name={'Tênis'}
         />
       </div>
