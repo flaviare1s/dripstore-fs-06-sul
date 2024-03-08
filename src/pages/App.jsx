@@ -1,11 +1,12 @@
 import "./App.css";
 
-import { Hero } from "../components/Hero";
-import { Footer } from "../components/Footer";
+import { Hero } from "../components/Hero/Hero";
+import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
-import { SideBySide } from "../components/SideBySide";
+import { SideBySide } from "../components/SideBySide/SideBySide";
 import { BurgerMenu } from "../components/BurgerMenu/BurgerMenu";
-import { FeaturedProductList } from "../components/featuredProductList/FeatureProductList";
+import { FeaturedProductList } from "../components/FeaturedProductList/FeatureProductList";
+import { SmallHighlightSection } from "../components/SmallHighlightSection/SmallHighlightSection";
 
 
 export function App() {
@@ -17,6 +18,11 @@ export function App() {
       </div>
       <div className="bg-[#F5F5F5]">
         <Hero />
+      </div>
+      <div>
+        <SmallHighlightSection 
+          title={'Coleções em destaque'}
+        />
       </div>
       <FeaturedProductList title={"Produtos em alta"} link={"Ver todos →"} />
       <SideBySide
