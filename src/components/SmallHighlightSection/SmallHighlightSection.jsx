@@ -10,7 +10,7 @@ export const SmallHighlightSection = ({ title }) => {
       <div>
         <h1 className="text-dark-gray-2 font-bold md:text-2xl md:text-center px-5">{title}</h1>
       </div>
-      <div className="pb-[40px] md:pb-[9px]">
+      <div className="pb-[50px] md:pb-[9px]">
         <div  className="flex justify-start md:justify-center items-center gap-5 md:gap-10 p-5 overflow-x-auto">
           <SmallHighlightItem
             image={<TShirtIcon />}
