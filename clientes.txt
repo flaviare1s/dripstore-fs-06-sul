@@ -1,3 +1,2 @@
-joao, feijao, 1
-pedro, carne, 10
-pedro, leite, 6.50
+Lucas, 30
+Lucas, 30
