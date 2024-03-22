@@ -9,10 +9,7 @@ function getFileOrCreate(callback) {
   }
 }
 
-function main() {
-  const data = process.argv[2];
-  const nome = process.argv[3];
-
+export function registrarUmaChamada(data, nome) {
   getFileOrCreate((_err, file) => {
     const lines = file.split("\n");
     const entradas = lines.reduce((acc, line) => {
@@ -65,5 +62,3 @@ function main() {
     console.log(newLines);
   });
 }
-
-main();
