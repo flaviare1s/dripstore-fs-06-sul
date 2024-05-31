@@ -5,8 +5,11 @@ import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { SideBySide } from "../components/SideBySide/SideBySide";
 import { BurgerMenu } from "../components/BurgerMenu/BurgerMenu";
+
+import { HighlightsSection } from "../components/HighlightsSection";
 import { FeaturedProductList } from "../components/FeaturedProductList/FeatureProductList";
 import { SmallHighlightSection } from "../components/SmallHighlightSection/SmallHighlightSection";
+
 
 
 export function App() {
@@ -18,6 +21,9 @@ export function App() {
       </div>
       <div className="bg-[#F5F5F5]">
         <Hero />
+      </div>
+      <div>
+        <HighlightsSection />
       </div>
       <div>
         <SmallHighlightSection 
