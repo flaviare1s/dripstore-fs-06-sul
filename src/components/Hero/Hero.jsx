@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css';
-import { HeroSlide } from './HeroSlide';
+import { HeroSlide } from '../HeroSlide/HeroSlide';
 
 export const Hero = () => {
   return (
