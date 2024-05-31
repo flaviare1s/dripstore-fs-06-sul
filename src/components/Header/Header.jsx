@@ -98,16 +98,22 @@ function Header() {
         )}
         <div className="hidden md:flex gap-8">
           <div>
-            <button className="font-Inter text-dark-gray-2">Home</button>
+            <button className="font-Inter text-dark-gray-2 hover:underline underline-offset-8 hover:font-bold hover:text-Primary hover:tracking-tight	">
+              Home
+            </button>
           </div>
           <div>
-            <button className="font-Inter text-dark-gray-2">Produtos</button>
+            <button className="font-Inter text-dark-gray-2 hover:underline underline-offset-8 hover:font-bold hover:text-Primary hover:tracking-tight	">
+              Produtos
+            </button>
           </div>
           <div>
-            <button className="font-Inter text-dark-gray-2">Categorias</button>
+            <button className="font-Inter text-dark-gray-2 hover:underline underline-offset-8 hover:font-bold hover:text-Primary hover:tracking-tight">
+              Categorias
+            </button>
           </div>
           <div>
-            <button className="font-Inter text-dark-gray-2">
+            <button className="font-Inter text-dark-gray-2 hover:underline underline-offset-8 hover:font-bold hover:text-Primary hover:tracking-tight">
               Meus pedidos
             </button>
           </div>
